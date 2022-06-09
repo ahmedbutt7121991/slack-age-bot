@@ -1,0 +1,10 @@
+packages:
+  - name: slack
+    actions:
+      - name: agebot
+        limits:
+          timeout: 5000
+          memory: 256
+environment:
+  SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
+  SLACK_APP_TOKEN: ${SLACK_APP_TOKEN}
